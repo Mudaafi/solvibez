@@ -37,7 +37,7 @@
     <h2>LINE-UP</h2>
     <div><img src="../assets/Line-up.png" alt="Line-Up Graphic" /></div>
     <div class="line-up-grid">
-      <div class="column">
+      <div class="row">
         <div class="item">
           <h3>SEEDING</h3>
           <p>
@@ -47,6 +47,19 @@
             provide our community a breather from all this fast-moving space.
           </p>
         </div>
+        <div class="item">
+          <h3>COLLATERAL</h3>
+          <p>
+            Sol Vibez will plan to launch a strategic collection of collateral
+            that not only include garments but also a plethora of accessories.
+            More will be revealed in due time, all we can say for now is that
+            the collection will be of quality as we care deeply about not only
+            the users, but how the brand is being represented.
+          </p>
+          <p>Let’s all swag out with vibez!</p>
+        </div>
+      </div>
+      <div class="row">
         <div class="item">
           <h3>CONNECT IRL</h3>
           <p>
@@ -62,19 +75,6 @@
             community to participate in and eventually establish valuable IRL
             connections.
           </p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="item">
-          <h3>COLLATERAL</h3>
-          <p>
-            Sol Vibez will plan to launch a strategic collection of collateral
-            that not only include garments but also a plethora of accessories.
-            More will be revealed in due time, all we can say for now is that
-            the collection will be of quality as we care deeply about not only
-            the users, but how the brand is being represented.
-          </p>
-          <p>Let’s all swag out with vibez!</p>
         </div>
         <div class="item">
           <h3>By Sol Vibez for Sol Vibez</h3>
@@ -177,10 +177,12 @@ section {
       margin-left: calc(var(--side-padding) * -1);
     }
     .line-up-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 50px;
       margin: 0 40px;
+      .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+      }
       .item {
         margin-bottom: 50px;
         h3 {
@@ -242,6 +244,9 @@ section {
         display: flex;
         flex-direction: column;
         margin: 0 5px;
+        .row {
+          display: block;
+        }
         .item {
           margin-bottom: 48px;
         }
