@@ -10,9 +10,9 @@ import IconDiscordVue from './icons/IconDiscord.vue'
     </div>
     <div class="right">
       <div class="button" @click="$router.push({ name: 'zone' })">The Zone</div>
-      <div class="icon">
+      <a class="icon" href="https://twitter.com/SoIVibez" target="_blank">
         <IconTwitterVue />
-      </div>
+      </a>
       <div class="icon">
         <IconDiscordVue />
       </div>
@@ -35,7 +35,8 @@ header {
     flex-direction: row;
     align-items: center;
     font-size: 26px;
-    div {
+    div,
+    a {
       line-height: 48px;
       &:not(:last-child) {
         margin-right: 20px;
@@ -48,7 +49,6 @@ header {
         }
       }
       .icon {
-        cursor: pointer;
         padding-top: 4px;
         svg {
           width: 24px;
@@ -56,8 +56,11 @@ header {
           fill: var(--sol-grey-dark);
           transition: fill 0.2s ease;
         }
-        &:hover svg {
-          fill: black;
+        &:is(a) {
+          cursor: pointer;
+          &:hover svg {
+            fill: black;
+          }
         }
       }
     }

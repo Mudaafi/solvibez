@@ -14,6 +14,15 @@
   src: local('Bebas'), url('/fonts/Bebas/Bebas-Regular.otf');
 }
 
+@font-face {
+  font-family: 'Minion Condensed';
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  src: local('Minion Condensed'),
+    url('./fonts/Minion-Condensed/Minion-Condensed.otf');
+}
+
 /* semantic color variables for this project */
 :root {
   --color-background: var(--sol-bg-main);
@@ -31,7 +40,6 @@
   box-sizing: border-box;
   margin: 0;
   position: relative;
-  font-weight: normal;
 }
 
 body {
@@ -51,10 +59,20 @@ body {
 
 h1 {
   font-size: 78px;
+  font-weight: normal;
 }
 h2 {
+  font-weight: normal;
   font-size: 70px;
 }
 h3 {
-  font-size: 24px;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Minion Condensed', Georgia, 'Times New Roman', Times, serif;
+  line-height: 26px;
 }

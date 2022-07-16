@@ -13,7 +13,6 @@ img {
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
-  // margin: -100px 0 0 0;
   align-self: bottom;
 }
 </style>
