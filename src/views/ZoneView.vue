@@ -243,7 +243,7 @@ section {
         flex-direction: column;
         margin: 0 5px;
         .item {
-          margin-bottom: 24px;
+          margin-bottom: 48px;
         }
       }
     }
